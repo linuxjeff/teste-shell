@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+nome=$( dialog --stdout --inputbox 'Digite seu nome:' 0 0 "Seu nome aqui")
+$(nome)
+clear
+echo "O seu nome é: $nome"
