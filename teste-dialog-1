@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#
+# teste-dialog-1 Teste de daloag para Yes e No
+#
+# 0.0.1 2022-04-16 Jefferson Santana
+# - Início do programa
+
+dialog --yesno 'Quer ver as horas?' 0 0
+
+if [ $? = 0 ]; then
+
+  echo "Agora são: $( date )"
+
+else
+
+  echo 'Ok, não vou mostrar as horas.'
+  
+fi
