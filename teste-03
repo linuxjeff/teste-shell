@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# recolhendo sim(0) ou não(1)
+
+recolhendo=$( dialog --stdout --yesno 'Você tem um arquivos?' 0 0 )
+
+$(recolhendo)
+
+clear
+
+echo "Aqui esta o resultado: "$recolhendo""
