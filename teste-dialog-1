@@ -4,6 +4,8 @@
 #
 # 0.0.1 2022-04-16 Jefferson Santana
 # - Início do programa
+# - Página que pergunta o que quer fazer
+# - Criado if que filtra o que vem da pregunta
 
 dialog --yesno 'Quer ver as horas?' 0 0
 
@@ -14,5 +16,5 @@ if [ $? = 0 ]; then
 else
 
   echo 'Ok, não vou mostrar as horas.'
-  
+
 fi
