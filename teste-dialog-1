@@ -12,7 +12,7 @@ dialog --yesno 'Quer ver as horas?' 0 0
 
 if [ $? = 0 ]; then
 
-  clear && echo "Agora são: $( date )"
+  clear && echo "Agora são: $( date +%H:%M:%S)"
 
 else
 
