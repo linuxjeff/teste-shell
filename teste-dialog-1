@@ -6,12 +6,13 @@
 # - Início do programa
 # - Página que pergunta o que quer fazer
 # - Criado if que filtra o que vem da pregunta
+# - Colocado um clear para limpar a tela antes de mostrar a hora
 
 dialog --yesno 'Quer ver as horas?' 0 0
 
 if [ $? = 0 ]; then
 
-  echo "Agora são: $( date )"
+  clear && echo "Agora são: $( date )"
 
 else
 
