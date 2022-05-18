@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+user=$( dialog --stdout --menu 'Bobice:' 0 0 0 1 um 2 dois 3 três )
+
+clear
+
+echo "Você escolheu o número $user"
